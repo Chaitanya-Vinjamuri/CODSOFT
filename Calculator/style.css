@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+    position: relative;
+    top: 50px;
+}
+body{
+    background-color: purple;
+}
+.container{
+    /* vh and vw are viewheight and viewwidth
+       Grid display will allows the display unit in grid format 
+    */
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+#display{
+    height: 150px;
+    width: auto;
+    /* the flex box is flexible designed to build layouts in css */
+    display: flex;
+    align-items: flex-end;
+    border-radius: 15px;
+    justify-content: end;
+    font-size: 30px;
+    border: 4px solid black;
+    margin-bottom: 30px;
+}
+.calculator{
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+    /* shadow property will blur the background of 30px */
+}
+button{
+    height: 60px;
+    width: 60px;
+    border: 0; /*To remove the pre-applied borders for td tags*/
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer; /* It creates a pointing cursor when the button is hovered */
+}
+button#equal{
+   height: 130px;
+   background-color: darkgray;
+   color: black;  
+}
+.calculator button#clear{
+    background-color: crimson;
+    color: white;
+}
+.calculator button.btn-operator{
+    background-color: black;
+    color: white;
+}
+.calculator button.btn-number{
+    background-color: black;
+    color:white;
+}
